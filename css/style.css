@@ -1,0 +1,67 @@
+*{
+    font-family: 'Montserrat', 'Stardom';
+}
+
+:root{
+    --main-color: #BFD8D2;
+    --secondary-color:#DE744C;
+    --third-color:#DEB13C;
+    --fouth-color:#141414;
+    --fifth-color:#F9F9F9;
+}
+
+
+.text-orange{
+    color: var(--secondary-color);
+}
+
+/*Nav*/
+.bg-principal, .membresias{
+    background-color: var(--main-color);
+}
+
+.nav-link{
+    color: var(--fouth-color);
+}
+
+.nav-link:hover, .nav-link:focus{
+    color: var(--secondary-color);
+}
+
+.nav-link:hover{
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+
+/*Main */
+/*Misión*/
+
+.fondo-imagen{
+    background-image: url('/assets/img/imagen01.jpg');
+    background-size: cover; /*cubre todo el espacio*/
+    background-position: center; 
+    background-repeat: no-repeat; /*para que no se repita la imagen cuando la imagen es muy chica*/
+    height: 91vh;
+}
+
+
+.text-white{
+    color: var(--fifth-color);
+
+}
+
+.text-black{
+    color: var(--fouth-color);
+}
+
+/*Membresías*/
+
+.card-body{
+    height: 350px;
+}
+
+.card {
+    border-radius: 20px; 
+    overflow: hidden;    /* Para que el contenido no desborde */
+}
