@@ -2,30 +2,21 @@
     font-family: 'Montserrat', 'Stardom';
 }
 
-:root{
-    --main-color: #BFD8D2;
-    --secondary-color:#DE744C;
-    --third-color:#DEB13C;
-    --fouth-color:#141414;
-    --fifth-color:#F9F9F9;
-}
-
-
 .text-orange{
-    color: var(--secondary-color);
+    color: #DE744C;
 }
 
 /*Nav*/
 .bg-principal, .membresias{
-    background-color: var(--main-color);
+    background-color: #BFD8D2;
 }
 
 .nav-link{
-    color: var(--fouth-color);
+    color: #141414;
 }
 
 .nav-link:hover, .nav-link:focus{
-    color: var(--secondary-color);
+    color: #DE744C;
 }
 
 .nav-link:hover{
@@ -47,12 +38,12 @@
 
 
 .text-white{
-    color: var(--fifth-color);
+    color: #F9F9F9;
 
 }
 
 .text-black{
-    color: var(--fouth-color);
+    color: #141414;
 }
 
 /*Membresías*/
@@ -68,4 +59,8 @@
 
 .bg-button{
     background-color: #DE744C!important;
+}
+
+.bg-button:hover{
+    background-color: #DEB13C!important;
 }
