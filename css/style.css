@@ -34,7 +34,42 @@
     background-position: center; 
     background-repeat: no-repeat; /*para que no se repita la imagen cuando la imagen es muy chica*/
     height: 92vh;
+    background-attachment: fixed; /*reemplazado por parallax */
+    z-index: -2;
 }
+
+
+/* .fondo-imagen{
+    position: relative;
+    height: 92vh;
+    background-attachment: fixed; /* Efecto parallax */
+    /* background-size: cover; Cubre todo el espacio */
+    /* background-position: center; */
+/* }  */
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay oscuro */
+    z-index: -1; /* Para que esté debajo del contenido */
+}
+
+.position-relative {
+    z-index: 2; /* Contenido en primer plano */
+}
+
+/* .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+} */
 
 
 .text-white{
