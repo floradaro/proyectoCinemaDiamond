@@ -65,26 +65,4 @@
     background-color: #DEB13C!important;
 }
 
-.contenedor{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 30vh;
-    margin: 15px 0 15px 0;
-    align-items: center;
-}
-
-.caja{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
-
-.caja img{
-    border-radius: 50%;
-}
 
