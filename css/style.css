@@ -6,8 +6,12 @@
     color: #DE744C;
 }
 
+.text-yellow{
+    color: #DEB13C;
+}
+
 /*Nav*/
-.bg-principal, .membresias{
+.bg-principal, .membresias, .experience{
     background-color: #BFD8D2;
 }
 
