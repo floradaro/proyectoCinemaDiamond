@@ -90,6 +90,6 @@
     background-image:linear-gradient(rgba(5,7,12,0.75), rgba( 5,7,12,0.75)), url('../assets/img/candy.jpg');
     background-size: cover; /*cubre todo el espacio*/
     background-position: center; 
-    background-repeat: repeat; /*para que no se repita la imagen cuando la imagen es muy chica*/
+    background-repeat: no-repeat; /*para que no se repita la imagen cuando la imagen es muy chica*/
     height: 92vh;
 }
