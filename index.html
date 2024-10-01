@@ -4,14 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Stardom:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Cinema Diamond</title>
 
 </head>
@@ -42,9 +39,11 @@
     </header>
 
     <main>
-        <section class="mision ">
-            <div class="position-relative overflow-hidden text-center fondo-imagen">
-                <div class="col-md-8 p-lg-5 mx-auto p-2 my-5">
+        <section class="mision">
+            <div class="position-relative overflow-hidden text-center fondo-imagen"
+                style="background-image: url('./assets/img/imagen-mision.jpg');">
+                <div class="overlay"></div> <!-- Overlay oscuro -->
+                <div class="col-md-8 p-lg-5 mx-auto p-2 my-5 position-relative">
                     <img class="d-block mx-auto" src="./assets/img/isotipo.png" alt width="auto" height="50">
                     <div class=" mb-4 mb-md-0">
                         <p class=" fs-1 fw-bold text-orange">Nuestra Misión</p>
@@ -80,19 +79,32 @@
                             </div>
                             <div class="card-body m-2">
                                 <ul class="list-unstyled mt-4 mb-4">
-                                    <li class="pb-3 ">2 Entradas gratis al mes <i
-                                            class="float-end fa-solid fa-check "></i></li>
-                                    <li class="pb-3 ">Regalo de Bienvenida <i class="float-end fa-solid fa-check"></i>
+                                    <li class="d-flex justify-content-between pb-3">
+                                        <span class="flex-grow-1 me-3">2 Entradas gratis al mes</span>
+                                        <i class="fa-solid fa-check"></i>
                                     </li>
-                                    <li class="pb-3 ">25 % de descuento en alimentos y bebidas <i
-                                            class=" float-end fa-solid fa-check"></i></li>
-                                    <li class="pb-3">Acceso anticipado a entrenos <i
-                                            class="float-end fa-solid fa-check"></i></li>
-                                    <li class="pb-3">Canje de Puntos <i class="float-end fa-solid fa-check"></i></li>
-                                    <li class="pb-3">50% Off en Entradas <i class="float-end fa-solid fa-check"></i>
+                                    <li class="d-flex justify-content-between pb-3">
+                                        <span class="flex-grow-1 me-3">Regalo de Bienvenida</span>
+                                        <i class="fa-solid fa-check"></i>
                                     </li>
-                                    <li class="pb-3">Beneficios Cinema Diamond <i
-                                            class="float-end fa-solid fa-check"></i></li>
+                                    <li class="d-flex justify-content-between pb-3">
+                                        <span class="flex-grow-1 me-3">25 % de descuento en alimentos y bebidas</span>
+                                        <i class="fa-solid fa-check"></i>
+                                    </li>
+                                    <li class="d-flex justify-content-between pb-3">
+                                        <span class="flex-grow-1 me-3">Acceso anticipado a entrenos</span>
+                                        <i class="fa-solid fa-check"></i>
+                                    </li>
+                                    <li class="d-flex justify-content-between pb-3">
+                                        <span class="flex-grow-1 me-3">Canje de Puntos</span>
+                                        <i class="fa-solid fa-check"></i>
+                                    </li>
+                                    <li class="d-flex justify-content-between pb-3">50% Off en Entradas
+                                        <i class="float-end fa-solid fa-check"></i>
+                                    </li>
+                                    <li class="pb-3">Beneficios Cinema Diamond
+                                        <i class="float-end fa-solid fa-check"></i>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -108,17 +120,28 @@
                             </div>
                             <div class="card-body m-2">
                                 <ul class="list-unstyled mt-4 mb-4">
-                                    <li class="pb-3">2 Entradas gratis al mes <i
-                                            class="float-end fa-solid fa-check"></i></li>
-                                    <li class="pb-3">Regalo de Bienvenida <i class="float-end fa-solid fa-check"></i>
+                                    <li class="d-flex justify-content-between pb-3">
+                                        <span class="flex-grow-1 me-3">2 Entradas gratis al mes</span>
+                                        <i class="fa-solid fa-check"></i>
                                     </li>
-                                    <li class="pb-3">25 % de descuento en alimentos y bebidas <i
-                                            class="float-end fa-solid fa-check"></i></li>
-                                    <li class="pb-3">Acceso anticipado a entrenos <i
-                                            class="float-end fa-solid fa-check"></i></li>
-                                    <li class="pb-3">Canje de Puntos <i class="float-end fa-solid fa-check"></i>
+                                    <li class="d-flex justify-content-between pb-3">
+                                        <span class="flex-grow-1 me-3">Regalo de Bienvenida</span>
+                                        <i class="fa-solid fa-check"></i>
                                     </li>
-                                    <li class="pb-3">50% Off en Entradas <i class="float-end fa-solid fa-check"></i>
+                                    <li class="d-flex justify-content-between pb-3">
+                                        <span class="flex-grow-1 me-3">25 % de descuento en alimentos y bebidas</span>
+                                        <i class="fa-solid fa-check"></i>
+                                    </li>
+                                    <li class="d-flex justify-content-between pb-3">
+                                        <span class="flex-grow-1 me-3">Acceso anticipado a entrenos</span>
+                                        <i class="fa-solid fa-check"></i>
+                                    </li>
+                                    <li class="d-flex justify-content-between pb-3">
+                                        <span class="flex-grow-1 me-3">Canje de Puntos</span>
+                                        <i class="fa-solid fa-check"></i>
+                                    </li>
+                                    <li class="d-flex justify-content-between pb-3">50% Off en Entradas
+                                        <i class="float-end fa-solid fa-check"></i>
                                     </li>
 
                                 </ul>
@@ -137,15 +160,25 @@
                             </div>
                             <div class="card-body m-2">
                                 <ul class="list-unstyled mt-4 mb-4">
-                                    <li class="pb-3">2 Entradas gratis al mes <i
-                                            class="float-end fa-solid fa-check"></i></li>
-                                    <li class="pb-3">Regalo de Bienvenida <i class="float-end fa-solid fa-check"></i>
+                                    <li class="d-flex justify-content-between pb-3">
+                                        <span class="flex-grow-1 me-3">2 Entradas gratis al mes</span>
+                                        <i class="fa-solid fa-check"></i>
                                     </li>
-                                    <li class="pb-3">25 % de descuento en alimentos y bebidas <i
-                                            class="float-end fa-solid fa-check"></i></li>
-                                    <li class="pb-3">Acceso anticipado a entrenos <i
-                                            class="float-end fa-solid fa-check"></i></li>
-                                    <li class="pb-3">Canje de Puntos <i class="float-end fa-solid fa-check"></i>
+                                    <li class="d-flex justify-content-between pb-3">
+                                        <span class="flex-grow-1 me-3">Regalo de Bienvenida</span>
+                                        <i class="fa-solid fa-check"></i>
+                                    </li>
+                                    <li class="d-flex justify-content-between pb-3">
+                                        <span class="flex-grow-1 me-3">25 % de descuento en alimentos y bebidas</span>
+                                        <i class="fa-solid fa-check"></i>
+                                    </li>
+                                    <li class="d-flex justify-content-between pb-3">
+                                        <span class="flex-grow-1 me-3">Acceso anticipado a entrenos</span>
+                                        <i class="fa-solid fa-check"></i>
+                                    </li>
+                                    <li class="d-flex justify-content-between pb-3">
+                                        <span class="flex-grow-1 me-3">Canje de Puntos</span>
+                                        <i class="fa-solid fa-check"></i>
                                     </li>
                                 </ul>
                             </div>
@@ -154,6 +187,118 @@
                 </div>
             </div>
         </section>
+        <section>
+            <div class="py-4 text-center">
+                <div class="content text-center ">
+                    <h1 class="display-5 fw-bold text-orange">Salas</h1>
+                    <p class="lead text-black"> Cinema Diamond te ofrece distintos formatos de salas para que
+                        puedas vivir una experiencia única a tu gusto y a tu medida. </p>
+                </div>
+                <div class="container">
+                    <div id="carouselExampleCaptions" class="carousel slide col-md-8  mx-auto ">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner ">
+                            <div class="carousel-item active ">
+                                <img src="assets/img/superComfort.jpg" class="d-block w-100" alt="Sala SuperConfort">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Sala Super Confort </h5>
+                                    <p> Equipamiento de última generación, un mayor espacio entre filas y butacas.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/xDiamond.jpg" class="d-block w-100" alt=" Sala XDiamond">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Sala XDiamond</h5>
+                                    <p>Posee pantallas más grandes que duplican el tamaño de una pantalla de cine común
+                                        2D o
+                                        3D</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/2D3D.jpg" class="d-block w-100" alt="Sala 2D y 3D">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Sala 2D y 3D</h5>
+                                    <p>Proyecta gran potencia luminica ofreciendo experiencias tradicionales 2D y 3D de
+                                        la
+                                        mejor calidad</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="candy">
+            <div class="py-4 text-center"></div>
+            <div class="position-relative overflow-hidden text-center fondo-imagen-candy">
+                <div class="col-md-8 p-lg-5 mx-auto p-2 my-5">
+                    <img class="d-block mx-auto" alt width="auto" height="50">
+                    <div class="mb-4 mb-md-0">
+                        <p class="fs-1 fw-bold text-orange">Candy Bar</p>
+                        <p class="fs-5 text-white m-md-4 m-sm-5">Servicio exclusivo de candy-bar para nuestros clientes
+                            con una amplia variedad de productos</p>
+                    </div>
+
+                    <div class="row row-cols-1 row-cols-md-3 g-5 text-start">
+                        <div class="col mb-4  ">
+                            <div class="card mb-4 align-items-center justify-content-center  ">
+                                <div class="d-flex mt-4">
+                                    <img src="./assets/img/bebida.png" alt="Bebida" width="auto" height="80"
+                                        class="mx-auto">
+                                </div>
+                                <div class="card-body m-2">
+                                    <h3 class="m-0">Bebidas</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col mb-4 ">
+                            <div class="card mb-4 align-items-center justify-content-center ">
+                                <div class="d-flex mt-4 ">
+                                    <img src="./assets/img/dulce.png" alt="Dulce" width="auto" height="80"
+                                        class="mx-auto">
+                                </div>
+                                <div class="card-body m-2 ">
+                                    <h3 class="m-1">Dulces</h3>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col mb-4">
+                            <div class="card mb-4  align-items-center justify-content-center ">
+                                <div class="d-flex mt-4 align-items-center justify-content-center">
+                                    <img src="./assets/img/aperitivo.png" alt="Aperitivo" width="auto" height="80"
+                                        class="mx-auto">
+                                </div>
+                                <div class="card-body m-2">
+                                    <h3 class="m-0">Snacks</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
         <section>
             <div class="py-4 text-center"></div>
@@ -189,28 +334,23 @@
                             </div>
                         </div>
 
-                        <div class="row g-3">
-                            <div class="col-sm-6">
-                                <label for="address" class="form-label">Dirección</label>
-                                <input type="text" class="form-control" id="address" placeholder="1234 Main St"
-                                    required>
-                                <div class="invalid-feedback">
-                                    Please enter your shipping address.
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6">
-                                <label for="number" class="form-number">Numeración</label>
-                                <input type="number" class="form-control" id="number" placeholder="1234" required>
-                                <div class="invalid-feedback">
-                                    Please provide a valid state.
-                                </div>
+                        <div class="col-md-8">
+                            <label for="address" class="form-label">Dirección</label>
+                            <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                            <div class="invalid-feedback">
+                                Please enter your shipping address.
                             </div>
                         </div>
 
+                        <div class="col-md-4">
+                            <label for="number" class="form-label">Numeración</label>
+                            <input type="number" class="form-control" id="number" placeholder="1234" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid state.
+                            </div>
+                        </div>
 
-
-                        <div class="col-md-5">
+                        <div class="col-md-6">
                             <label for="country" class="form-label">País</label>
                             <select class="form-select" id="country" required>
                                 <option value="">Seleccionar...</option>
@@ -223,7 +363,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <label for="state" class="form-label">Provincia</label>
                             <select class="form-select" id="state" required>
                                 <option value="">Seleccionar...</option>
@@ -278,22 +418,72 @@
                         </div>
                     </div>
 
-                    <hr class="my-4">
 
-                    <button class="w-100 btn  btn-lg mb-3 bg-button text-white" type="submit">Enviar</button>
+
+                    <div class="d-flex justify-content-center mt-4">
+                        <button class="btn  btn-lg mb-3 bg-button text-white" type="submit">Enviar</button>
+                    </div>
                 </form>
             </div>
             </div>
         </section>
 
+        <section class="experience fondo-imagen" style="background-image: url('./assets/img/imagen-experiencia.jpg');">
+            <div class="py-4 text-center"></div>
+            <div class="overlay"></div> <!-- Overlay oscuro -->
+            <div class="container text-center text-white py-4">
+                <div class="content">
+                    <h1 class="display-5 fw-bold text-orange">Lo que dicen nuestros usuarios</h1>
+                    <p class="lead text-white"> Descubre lo que piensan los usuarios sobre nuestra experiencia
+                        cinematográfica. </p>
+                </div>
+                <div class="row text-white py-5">
+                    <div class="col-lg-4">
+                        <img src="./assets/img/persona1.jpg" alt="Persona" class="img-fluid rounded-circle" width="70%"
+                            height="100%">
+
+                        <h2 class="fw-normal pt-2">Matias</h2>
+                        <p>Algún contenido de marcador de posición representativo para las tres columnas de texto debajo
+                            del carrusel.
+                            Esta es la primera columna.</p>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <img src="./assets/img/persona2.jpg" alt="Persona" class="img-fluid rounded-circle" width="70%"
+                            height="100%">
+
+                        <h2 class="fw-normal pt-2">Carina</h2>
+                        <p>Algún contenido de marcador de posición representativo para las tres columnas de texto debajo
+                            del carrusel.
+                            Esta es la primera columna.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="./assets/img/persona3.jpg" alt="Persona" class="img-fluid rounded-circle" width="70%"
+                            height="100%">
+
+                        <h2 class="fw-normal pt-2">Luis</h2>
+                        <p>Algún contenido de marcador de posición representativo para las tres columnas de texto debajo
+                            del carrusel.
+                            Esta es la primera columna.</p>
+                    </div>
+                </div>
+
+
+        </section>
 
     </main>
+
+
     <footer class="bg-dark text-white">
         <div class="container py-4">
             <div class="row">
-                <div class="col-md-6">
-                    <h5>Diamond Cinema</h5>
+                <div class="col-md-6 mt-4 ">
+                    <a href="#">
+                        <img src="./assets/img/imagotipo4-09.png" alt="Logo" width="50%">
+                    </a>
+
                     <p>Una breve descripción de tu empresa o sitio web.</p>
+
                 </div>
                 <div class="col-md-3">
                     <h5>Enlaces</h5>
@@ -320,9 +510,7 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
 
 </body>
 
