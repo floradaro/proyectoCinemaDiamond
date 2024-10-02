@@ -27,11 +27,11 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end " id="navbarNavAltMarkup">
                     <div class="navbar-nav d-flex gap-2 fs-6">
-                        <a class="nav-link " href="#">Quienes Somos</a>
-                        <a class="nav-link" href="#">Membresías</a>
-                        <a class="nav-link" href="#">Salas</a>
-                        <a class="nav-link" href="#">Usuarios</a>
-                        <a class="nav-link" href="#">Candy</a>
+                        <a class="nav-link " href="#mision">Quienes Somos</a>
+                        <a class="nav-link" href="#membresias">Membresías</a>
+                        <a class="nav-link" href="#salas">Salas</a>
+                        <a class="nav-link" href="#candy">Candy</a>
+                        <a class="nav-link" href="#experience">Usuarios</a>
                     </div>
                 </div>
             </div>
@@ -39,7 +39,7 @@
     </header>
 
     <main>
-        <section class="mision">
+        <section id="mision">
             <div class="position-relative overflow-hidden text-center fondo-imagen"
                 style="background-image: url('./assets/img/imagen-mision.jpg');">
                 <div class="overlay"></div> <!-- Overlay oscuro -->
@@ -58,7 +58,7 @@
 
 
 
-        <section class="membresias p-2">
+        <section class="p-2" id="membresias">
             <div class="py-4 text-center">
                 <div class="content ">
                     <h1 class="display-5 fw-bold text-orange">Nuestras Membresías</h1>
@@ -121,11 +121,11 @@
                             <div class="card-body m-2">
                                 <ul class="list-unstyled mt-4 mb-4">
                                     <li class="d-flex justify-content-between pb-3">
-                                        <span class="flex-grow-1 me-3">2 Entradas gratis al mes</span>
+                                        <span class="flex-grow-1 me-2">2 Entradas gratis al mes</span>
                                         <i class="fa-solid fa-check"></i>
                                     </li>
                                     <li class="d-flex justify-content-between pb-3">
-                                        <span class="flex-grow-1 me-3">Regalo de Bienvenida</span>
+                                        <span class="flex-grow-1 me-2">Regalo de Bienvenida</span>
                                         <i class="fa-solid fa-check"></i>
                                     </li>
                                     <li class="d-flex justify-content-between pb-3">
@@ -187,7 +187,8 @@
                 </div>
             </div>
         </section>
-        <section class="salas p-4">
+
+        <section class="p-4" id="salas">
             <div class=" text-center">
                 <div class="content text-center ">
                     <h1 class="display-5 fw-bold text-orange">Salas</h1>
@@ -246,7 +247,7 @@
             </div>
         </section>
 
-        <section class="candy">
+        <section id="candy">
             <div class="py-4 text-center"></div>
             <div class="position-relative overflow-hidden text-center fondo-imagen-candy">
                 <div class="col-md-8 p-lg-5 mx-auto p-2 my-5">
@@ -299,6 +300,49 @@
             </div>
         </section>
 
+        <section id="experience" class="experience">
+            <div class="py-4 text-center">
+                <div class="container text-center text-white">
+                    <div class="content">
+                        <h1 class="display-5 fw-bold text-orange">Lo que dicen nuestros usuarios</h1>
+                        <p class="lead text-black"> Descubre lo que piensan los usuarios sobre nuestra experiencia
+                            cinematográfica. </p>
+                    </div>
+                    <div class="row py-2">
+                        <div class="col-lg-4 pb-4">
+                            <img src="./assets/img/persona1.jpg" alt="Persona" class="img-fluid rounded-circle"
+                                width="70%" height="100%">
+
+                            <h2 class="fw-bold pt-2 text-orange">Matias</h2>
+                            <p class="text-black">Algún contenido de marcador de posición representativo para las tres columnas de
+                                texto debajo
+                                del carrusel.
+                                Esta es la primera columna.</p>
+                        </div>
+
+                        <div class="col-lg-4 pb-4">
+                            <img src="./assets/img/persona4.jpg" alt="Persona" class="img-fluid rounded-circle"
+                                width="70%" height="100%">
+
+                            <h2 class="fw-bold pt-2 text-yellow">Carina</h2>
+                            <p class="text-black">Algún contenido de marcador de posición representativo para las tres columnas de
+                                texto debajo
+                                del carrusel.
+                                Esta es la primera columna.</p>
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="./assets/img/persona3.jpg" alt="Persona" class="img-fluid rounded-circle"
+                                width="70%" height="100%">
+
+                            <h2 class="fw-bold pt-2 text-orange">Luis</h2>
+                            <p class="text-black">Algún contenido de marcador de posición representativo para las tres columnas de
+                                texto debajo
+                                del carrusel.
+                                Esta es la primera columna.</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
 
         <section class="formulario">
             <div class="py-4 text-center"></div>
@@ -428,49 +472,7 @@
             </div>
         </section>
 
-        <section class="experience">
-            <div class="py-4 text-center">
-                <div class="container text-center text-white">
-                    <div class="content">
-                        <h1 class="display-5 fw-bold text-orange">Lo que dicen nuestros usuarios</h1>
-                        <p class="lead text-black"> Descubre lo que piensan los usuarios sobre nuestra experiencia
-                            cinematográfica. </p>
-                    </div>
-                    <div class="row py-2">
-                        <div class="col-lg-4 pb-4">
-                            <img src="./assets/img/persona1.jpg" alt="Persona" class="img-fluid rounded-circle"
-                                width="70%" height="100%">
-
-                            <h2 class="fw-bold pt-2 text-orange">Matias</h2>
-                            <p class="text-black">Algún contenido de marcador de posición representativo para las tres columnas de
-                                texto debajo
-                                del carrusel.
-                                Esta es la primera columna.</p>
-                        </div>
-
-                        <div class="col-lg-4 pb-4">
-                            <img src="./assets/img/persona4.jpg" alt="Persona" class="img-fluid rounded-circle"
-                                width="70%" height="100%">
-
-                            <h2 class="fw-bold pt-2 text-yellow">Carina</h2>
-                            <p class="text-black">Algún contenido de marcador de posición representativo para las tres columnas de
-                                texto debajo
-                                del carrusel.
-                                Esta es la primera columna.</p>
-                        </div>
-                        <div class="col-lg-4">
-                            <img src="./assets/img/persona3.jpg" alt="Persona" class="img-fluid rounded-circle"
-                                width="70%" height="100%">
-
-                            <h2 class="fw-bold pt-2 text-orange">Luis</h2>
-                            <p class="text-black">Algún contenido de marcador de posición representativo para las tres columnas de
-                                texto debajo
-                                del carrusel.
-                                Esta es la primera columna.</p>
-                        </div>
-                    </div>
-                </div>
-        </section>
+        
     </main>
 
 
