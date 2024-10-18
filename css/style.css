@@ -2,6 +2,9 @@
     font-family: 'Montserrat', 'Stardom';
 }
 
+html, body{
+    overflow-x: hidden;
+}
 .text-orange{
     color: #DE744C;
 }
@@ -11,7 +14,7 @@
 }
 
 /*Nav*/
-.bg-principal, .membresias, .experience{
+.bg-principal, .membresias, .experience, .ubicacion{
     background-color: #BFD8D2;
 }
 
@@ -37,9 +40,9 @@
     background-size: cover; /*cubre todo el espacio*/
     background-position: center; 
     background-repeat: no-repeat; /*para que no se repita la imagen cuando la imagen es muy chica*/
-    height: 92vh;
     background-attachment: fixed;
     z-index: -2;
+    min-height: 300px;
 }
 
 .mision,.experience {
@@ -97,3 +100,49 @@
     background-repeat: no-repeat; /*para que no se repita la imagen cuando la imagen es muy chica*/
     height: 92vh;
 }
+@media screen and (max-width: 576px){
+    .fondo-imagen{
+        background-position: 40%; 
+    }
+
+    .ubicacion{
+        .text-start{
+            text-align: center !important;
+        }
+    }
+    .mapa{
+        width: 40vh;
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+    }
+
+    
+}
+
+@media screen and (max-width: 768px){
+    .fondo-imagen{
+        background-position: 35%; 
+    }
+
+    .mapa{
+        width: 40vh;
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+    }
+
+    .info{
+        h1{
+            font-size: 150%;
+        }
+        h5, p{
+            font-size: 100%;
+        }
+    }
+
+
+}
+
