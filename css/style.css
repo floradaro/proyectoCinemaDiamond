@@ -56,7 +56,7 @@ html, body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.65);/* Overlay oscuro*/
+    background-color: rgba(0, 0, 0, 0.50);/* Overlay oscuro*/
     z-index: -1; /*Para que esté debajo del contenido */
 }
 
@@ -80,9 +80,27 @@ html, body{
     height: 350px;
 }
 
-.card {
-    border-radius: 20px; 
-    overflow: hidden;    /* Para que el contenido no desborde */
+.card-gold, .card-silver, .card-bronze {
+    border-radius: 20px;
+    overflow: hidden; /* Para que el contenido no desborde */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suavidad en hover */
+    position: relative; /* Necesario para el efecto del borde */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);    /* Para que el contenido no desborde */
+}
+
+.card-gold:hover{
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 0 25px #d9bd75;
+}
+
+.card-silver:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #99c2b8;
+}
+
+.card-bronze:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #d28264;
 }
 
 .bg-button{
@@ -92,6 +110,32 @@ html, body{
 .bg-button:hover{
     background-color: #DEB13C!important;
 }
+
+.sala{
+    background-color: #BFD8D2 ;
+}
+
+/* carrousel*/
+
+.carousel-item {
+    position: relative;
+  }
+  
+  .carousel-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .carousel-caption {
+    position: absolute;
+    z-index: 2;
+  }
 
 .fondo-imagen-candy{
     background-image:linear-gradient(rgba(5,7,12,0.75), rgba( 5,7,12,0.75)), url('../assets/img/candy.jpg');
