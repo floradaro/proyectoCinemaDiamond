@@ -173,7 +173,7 @@ html, body{
 }
 
 .card-usuario{
-    height: 300px;
+    height: 50vh;
     border-radius: 10px;
 }
 
@@ -188,7 +188,7 @@ html, body{
         }
     }
     .mapa{
-        width: 60vw !important;
+        width: 55vw !important;
         height: 30vh;
         display: flex;
         justify-content: center;
@@ -196,7 +196,7 @@ html, body{
     }
 
     .card-usuario{
-        height: 400px;
+        height: 40vh !important;
 
     }
     
@@ -210,7 +210,7 @@ html, body{
     }
 
     .mapa{
-        width: 85vw !important;
+        width: 80vw !important;
         height: 40vh;
         display: flex;
         justify-content: center;
@@ -225,7 +225,9 @@ html, body{
         h5, p{
             font-size: 100%;
         }
+
     }
+
 
 
     /* Formulario suscripción */
