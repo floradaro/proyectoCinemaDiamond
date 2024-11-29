@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Stardom:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css">
     <title>Cinema Diamond</title>
 
@@ -15,10 +16,10 @@
 
 <body>
     <header>
-        <nav class=" navbar navbar-expand-lg  align-items-center p-3 bg-principal fixed-top shadow">
+        <nav class="navbar navbar-expand-lg navbar-dark align-items-center p-3 bg-principal fixed-top shadow">
             <div class="container-fluid">
                 <a href="#">
-                    <img src="./assets/img/imagotipo2.png" alt="Logo" style="max-height: 40px;">
+                    <img src="./assets/img/imagotipo2.png" alt="Logo" style="max-height: 40px;" class="mx-4">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -44,8 +45,8 @@
                 style="background-image: url('./assets/img/imagen-mision.jpg');">
                 <div class="overlay"></div> <!-- Overlay oscuro -->
                 <div class="col-md-8 p-lg-5 mx-auto p-2 my-5 position-relative">
-                    <img class="d-block mx-auto" src="./assets/img/isotipo.png" alt width="auto" height="50">
-                    <div class=" mb-4 mb-md-0">
+                    <div class=" mb-4 mb-md-0 mt-4 p-4">
+                        <img class="d-block mx-auto" src="./assets/img/isotipo.png" alt width="auto" height="50">
                         <p class=" fs-1 fw-bold text-orange">Nuestra Misión</p>
                         <p class="fs-5 text-white m-4 m-md-4 m-sm-5">Somos un cine comprometido con brindar una
                             experiencia cinematográfica de alta calidad, donde cada visita se convierte en un momento
@@ -58,11 +59,11 @@
 
 
 
-        <section class="p-2 m-4" id="membresias">
+        <section class="p-2 m-4" id="membresias" data-aos="fade-up">
             <div class="py-4 text-center">
-                <div class="content ">
+                <div class="content  ">
                     <h1 class="display-5 fw-bold text-orange">Nuestras Membresías</h1>
-                    <p class="lead text-black">Disfruta de beneficios exclusivos como entradas gratis, descuentos y
+                    <p class="lead text-black ">Disfruta de beneficios exclusivos como entradas gratis, descuentos y
                         acceso anticipado a estrenos.</p>
                 </div>
             </div>
@@ -188,11 +189,11 @@
             </div>
         </section>
 
-        <section class="p-4 px-4 sala" id="salas">
+        <section class="p-4 px-4 sala" id="salas" data-aos="fade-up">
             <div class="py-4 text-center">
-                <div class="content text-center mx-4 px-4">
+                <div class="content mx-4 px-4">
                     <h1 class="display-5 fw-bold text-orange">Salas</h1>
-                    <p class="lead text-black mx-4  pb-4"> Cinema Diamond te ofrece distintos formatos de salas para
+                    <p class="lead text-black mx-4 pb-4"> Cinema Diamond te ofrece distintos formatos de salas para
                         que
                         puedas vivir una experiencia única a tu gusto y a tu medida. </p>
                 </div>
@@ -254,40 +255,47 @@
                     <div class="col-md-8 p-lg-5 mx-auto">
                         <div class="mb-4 mb-md-0">
                             <p class="fs-1 fw-bold text-orange">Candy Bar</p>
-                            <p class="fs-5 text-white m-md-5 m-sm-5">Servicio exclusivo de candy-bar para nuestros clientes con una amplia variedad de productos</p>
+                            <p class="fs-5 text-white m-md-5 m-sm-5">Servicio exclusivo de candy-bar para nuestros
+                                clientes con una amplia variedad de productos</p>
                         </div>
-        
+
                         <!-- Fila de cards -->
                         <div class="row row-cols-1 row-cols-md-3 g-4">
                             <!-- Card 1 -->
                             <div class="col">
-                                <div class="card h-100 text-center">
-                                    <div class="d-flex align-items-center justify-content-center" style="height: 150px;">
-                                        <img src="./assets/img/bebida.png" alt="Bebida" class="img-fluid" style="max-height: 100%;">
+                                <div class="card h-100 text-center card-yellow">
+                                    <div class="d-flex align-items-center justify-content-center m-4"
+                                        style="height: 150px;">
+                                        <img src="./assets/img/bebida.png" alt="Bebida" class="img-fluid"
+                                            style="max-height: 100%;">
                                     </div>
                                     <div class="card-title">
                                         <h3 class="card-title">Bebidas</h3>
                                     </div>
                                 </div>
                             </div>
-        
+
                             <!-- Card 2 -->
                             <div class="col">
-                                <div class="card h-100 text-center">
-                                    <div class="d-flex align-items-center justify-content-center" style="height: 150px;">
-                                        <img src="./assets/img/dulce.png" alt="Dulce" class="img-fluid" style="max-height: 100%;">
+                                <div class="card h-100 text-center card-yellow">
+                                    <div class="d-flex align-items-center justify-content-center m-4"
+                                        style="height: 150px;">
+                                        <img src="./assets/img/dulce.png" alt="Dulce" class="img-fluid"
+                                            style="max-height: 100%;">
                                     </div>
                                     <div class="card-title">
                                         <h3 class="card-title">Dulces</h3>
                                     </div>
                                 </div>
                             </div>
-        
+
                             <!-- Card 3 -->
                             <div class="col">
-                                <div class="card h-100 text-center">
-                                    <div class="d-flex align-items-center justify-content-center" style="height: 150px;">
-                                        <img src="./assets/img/aperitivo.png" alt="Aperitivo" class="img-fluid" style="max-height: 100%;">
+                                <div class="card h-100 text-center card-yellow">
+                                    <div class="d-flex align-items-center justify-content-center m-4"
+                                        style="height: 150px;">
+                                        <img src="./assets/img/aperitivo.png" alt="Aperitivo" class="img-fluid"
+                                            style="max-height: 100%;">
                                     </div>
                                     <div class="card-title">
                                         <h3 class="card-title">Snacks</h3>
@@ -299,9 +307,103 @@
                 </div>
             </div>
         </section>
-        
 
-        <section id="experience" class="experience p-4 px-4 ">
+
+        <section id="experience" class="experience p-4 px-4 " data-aos="fade-up">
+            <div class="py-4 text-center">
+                <div class="container text-center">
+                    <div class="content">
+                        <h1 class="display-5 fw-bold text-orange">Lo que dicen nuestros usuarios</h1>
+                        <p class="lead text-black"> Descubre lo que piensan los usuarios sobre nuestra experiencia
+                            cinematográfica. </p>
+                    </div>
+
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 p-4">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card card-usuario" data-aos="fade-up">
+                                <div class="d-flex flex-column flex-md-row align-items-center mx-2 mx-md-4 pt-3 p-md-4">
+                                    <img src="./assets/img/persona1.jpg" alt="Persona"
+                                        class="img-fluid rounded-circle border "
+                                        style="width: 120px; height: 120px; object-fit: cover;">
+
+                                    <!-- Contenedor de texto y estrellas alineado con la imagen -->
+                                    <div class="ms-md-4 mt-3 mt-md-1">
+                                        <h4 class="card-title mb-2">Agustín Díaz</h4>
+                                        <div class="mb-3">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star-half-alt text-warning"></i>
+                                            <i class="far fa-star text-warning"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card card-usuario" data-aos="fade-up">
+                                <div class="d-flex flex-column flex-md-row align-items-center mx-2 mx-md-4 pt-3 p-md-4">
+                                    <img src="./assets/img/persona2.jpg" alt="Persona"
+                                        class="img-fluid rounded-circle border "
+                                        style="width: 120px; height: 120px; object-fit: cover;">
+
+                                    <!-- Contenedor de texto y estrellas alineado con la imagen -->
+                                    <div class="ms-md-4 mt-3 mt-md-1">
+                                        <h4 class="card-title mb-2">Carla Morales</h4>
+                                        <div class="mb-3">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star-half-alt text-warning"></i>
+                                            <i class="far fa-star text-warning"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card card-usuario" data-aos="fade-up" style="width: 100%;">
+                                <div class="d-flex flex-column flex-md-row align-items-center mx-2 mx-md-4 pt-3 p-md-4">
+                                    <img src="./assets/img/persona3.jpg" alt="Persona"
+                                        class="img-fluid rounded-circle border"
+                                        style="width: 120px; height: 120px; object-fit: cover;">
+
+                                    <!-- Contenedor de texto y estrellas alineado con la imagen -->
+                                    <div class="ms-md-4 mt-3 mt-md-1">
+                                        <h4 class="card-title mb-2">Mario Puebla</h4>
+                                        <div class="mb-3">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star-half-alt text-warning"></i>
+                                            <i class="far fa-star text-warning"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body"
+                                    style="overflow: hidden; word-wrap: break-word; padding-bottom: 1.25rem;">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+        </section>
+        <!--
+        <section id="experience" class="experience p-4 px-4 " data-aos="fade-up">
             <div class="py-4 text-center">
                 <div class="container text-center text-white">
                     <div class="content">
@@ -309,7 +411,7 @@
                         <p class="lead text-black"> Descubre lo que piensan los usuarios sobre nuestra experiencia
                             cinematográfica. </p>
                     </div>
-                    <div class="row py-2">
+                    <div class="row py-4">
                         <div class="col-lg-4 pb-4">
                             <img src="./assets/img/persona1.jpg" alt="Persona" class="img-fluid rounded-circle"
                                 width="70%" height="100%">
@@ -319,19 +421,19 @@
                                 columnas de
                                 texto debajo
                                 del carrusel.
-                                Esta es la primera columna.</p>
+                            </p>
                         </div>
 
                         <div class="col-lg-4 pb-4">
                             <img src="./assets/img/persona4.jpg" alt="Persona" class="img-fluid rounded-circle"
                                 width="70%" height="100%">
 
-                            <h2 class="fw-bold pt-2 text-yellow">Carina</h2>
+                            <h2 class="fw-bold pt-2 text-orange">Carina</h2>
                             <p class="text-black">Algún contenido de marcador de posición representativo para las tres
                                 columnas de
                                 texto debajo
                                 del carrusel.
-                                Esta es la primera columna.</p>
+                            </p>
                         </div>
                         <div class="col-lg-4">
                             <img src="./assets/img/persona3.jpg" alt="Persona" class="img-fluid rounded-circle"
@@ -342,35 +444,37 @@
                                 columnas de
                                 texto debajo
                                 del carrusel.
-                                Esta es la primera columna.</p>
+                            </p>
                         </div>
                     </div>
                 </div>
         </section>
+-->
 
-        <section class="formulario" id="contacto">
+        <section class="formulario" id="contacto" data-aos="fade-up">
             <div class="py-4 text-center"></div>
             <div class="container">
-                <div class="content text-center ">
+                <div class="content text-center">
                     <h1 class="display-5 fw-bold text-orange">Subscribite</h1>
                     <p class="lead text-black"> Enterate de nuestro último estrenos y haremos única tu experiencia en
                         Cinema Diamond</p>
                 </div>
-                <form class="needs-validation" novalidate>
+                <form class="needs-validation px-4" novalidate>
                     <div class="row g-3">
                         <div class="col-sm-6">
                             <label for="firstName" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                            <input type="text" class="form-control" id="firstName" placeholder="" required>
                             <div class="invalid-feedback">
-                                Valid first name is required.
+                                Por favor, ingrese un nombre válido (solo letras).
                             </div>
                         </div>
 
                         <div class="col-sm-6">
                             <label for="lastName" class="form-label">Apellido</label>
-                            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                            <input type="text" class="form-control" id="lastName" placeholder="" required>
                             <div class="invalid-feedback">
-                                Valid last name is required.
+                                Por favor, ingrese un apellido válido (solo letras).
+
                             </div>
                         </div>
 
@@ -378,7 +482,7 @@
                             <label for="email" class="form-label">Email </label>
                             <input type="email" class="form-control" id="email" placeholder="tumail@ejemplo.com">
                             <div class="invalid-feedback">
-                                Please enter a valid email address for shipping updates.
+                                Por favor, ingrese un email valido.
                             </div>
                         </div>
 
@@ -386,7 +490,7 @@
                             <label for="address" class="form-label">Dirección</label>
                             <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
                             <div class="invalid-feedback">
-                                Please enter your shipping address.
+                                Por favor, ingrese una dirección válida.
                             </div>
                         </div>
 
@@ -394,7 +498,8 @@
                             <label for="number" class="form-label">Numeración</label>
                             <input type="number" class="form-control" id="number" placeholder="1234" required>
                             <div class="invalid-feedback">
-                                Please provide a valid state.
+                                Por favor, ingrese una numeración válida.
+
                             </div>
                         </div>
 
@@ -457,13 +562,11 @@
                         </div>
                     </div>
 
-                    <div>
-                        <div class="form-floating">
-                            <h4 class="mb-3">Dejanos un comentario</h4>
-                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                                style="height: 100px"></textarea>
-                            <label for="floatingTextarea2"></label>
-                        </div>
+                    <div class="form-floating">
+                        <h4 class="mb-3">Dejanos un comentario</h4>
+                        <textarea class="form-control auto-expand" placeholder="Leave a comment here"
+                            id="floatingTextarea2" rows="4" style="resize: none; overflow: hidden;"></textarea>
+                        <!-- <label for="floatingTextarea2"></label> -->
                     </div>
 
 
@@ -476,9 +579,9 @@
             </div>
         </section>
 
-        <section class="ubicacion">
+        <section class="ubicacion" data-aos="fade-up">
             <div class="row text-center">
-                <div class="col order-md-2 align-items-center">
+                <div class="col-12 col-md-6 order-md-2" data-aos="fade-left">
                     <div class="mt-4 pt-4 info">
                         <img class="align-items-center" src="./assets/img/isotipo.png" alt width="auto" height="50">
                         <h1 class="display-5 fw-bold text-orange  ">Contáctanos</h1>
@@ -501,10 +604,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col order-md-1 m-4">
+                <div class="col order-md-1 m-4 ps-4 m-md-3">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8606.609410065457!2d-68.87254289498891!3d-32.88755384119517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e08525b921ea7%3A0x5d91dba677df80da!2sITU%20Redes%20de%20Datos%20y%20Telecomunicaciones!5e0!3m2!1ses-419!2sar!4v1729224167130!5m2!1ses-419!2sar"
-                        width="650" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        width="550" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
 
 
@@ -519,16 +622,18 @@
     <footer class="bg-dark text-white">
         <div class="container py-4">
             <div class="row">
-                <div class="col-12 col-md-6 mt-4 ">
+                <div class="col-12 col-md-6 mt-2">
                     <a href="#">
                         <img src="./assets/img/imagotipo4-09.png" alt="Logo" width="50%">
                     </a>
 
-                    <p>Diamond Cinema ofrece una experiencia cinematográfica única, combinando comodidad, tecnología de
+                    <p class="me-4 pe-4 mt-2">Diamond Cinema ofrece una experiencia cinematográfica única, combinando
+                        comodidad,
+                        tecnología de
                         punta y un servicio excepcional para que disfrutes al máximo cada película.</p>
 
                 </div>
-                <div class="col-6 col-md-3">
+                <div class="col-6 col-md-3 mt-3">
                     <h5>Enlaces</h5>
                     <ul class="list-unstyled">
                         <li><a href="#" class="text-white">Inicio</a></li>
@@ -537,7 +642,7 @@
                         <li><a href="#contacto" class="text-white">Contacto</a></li>
                     </ul>
                 </div>
-                <div class="col-6 col-md-3">
+                <div class="col-6 col-md-3 mt-3">
                     <h5>Contacto</h5>
                     <ul class="list-unstyled">
                         <li>Horario de atencion</li>
@@ -553,7 +658,14 @@
         </div>
     </footer>
 
+
     <script src="js/bootstrap.js""></script>
+    <script src=" js/custom.js""></script>
+
+    <script src=" https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
