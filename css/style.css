@@ -214,5 +214,11 @@ html, body{
     }
 
 
+    /* Formulario suscripción */
+    .auto-expand {
+        min-height: 100px; /* Inicial fixed height */
+        max-height: 300px; /* Optional: prevent infinite growth */
+        resize: none; /* Prevent manual resizing */
+    }
 }
 
