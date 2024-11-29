@@ -9,12 +9,10 @@ html, body{
     color: #DE744C;
 }
 
-.text-yellow{
-    color: #DEB13C;
-}
+
 
 /*Nav*/
-.bg-principal, .membresias, .experience, .ubicacion{
+.bg-principal, .membresias, .experience{
     background-color: #BFD8D2;
 }
 
@@ -43,6 +41,8 @@ html, body{
     background-attachment: fixed;
     z-index: -2;
     min-height: 300px;
+    height: 625px;
+
 }
 
 .mision,.experience {
@@ -75,6 +75,21 @@ html, body{
 }
 
 /*Membresías*/
+
+.membresias, .salas{
+    opacity: 0;
+  transform: translateY(50px);  /* Mueve la sección hacia abajo */
+  transition: opacity 0.5s ease, transform 0.5s ease; 
+}
+
+.membresias:hover, .salas:hover{
+    opacity: 1;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
 .card-body{
     height: 350px;
@@ -111,8 +126,8 @@ html, body{
     background-color: #DEB13C!important;
 }
 
-.sala{
-    background-color: #BFD8D2 ;
+.sala, .ubicacion{
+    background-color: #e8f3f1 ;
 }
 
 /* carrousel*/
@@ -148,14 +163,20 @@ html, body{
     justify-content: center; /* Centra contenido horizontalmente */
     padding: 20px; /* Opcional: Espaciado interno */
 }
-.card {
+.card-yellow {
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.card:hover {
+.card-yellow:hover {
     box-shadow: 0 0 15px rgba(255, 165, 0, 0.7); /* Brillo naranja */
     transform: scale(1.05); /* Escalado suave */
 }
+
+.card-usuario{
+    height: 300px;
+    border-radius: 10px;
+}
+
 @media screen and (max-width: 576px){
     .fondo-imagen{
         background-position: 40%; 
@@ -167,12 +188,18 @@ html, body{
         }
     }
     .mapa{
-        width: 40vh;
+        width: 60vw !important;
         height: 30vh;
         display: flex;
         justify-content: center;
         margin-top: 0;
     }
+
+    .card-usuario{
+        height: 400px;
+
+    }
+    
 
     
 }
@@ -183,11 +210,12 @@ html, body{
     }
 
     .mapa{
-        width: 40vh;
+        width: 85vw !important;
         height: 40vh;
         display: flex;
         justify-content: center;
         margin-top: 0;
+        align-items: center;
     }
 
     .info{
@@ -207,4 +235,7 @@ html, body{
         resize: none; /* Prevent manual resizing */
     }
 }
+
+
+
 
