@@ -137,12 +137,24 @@ html, body{
     z-index: 2;
   }
 
-.fondo-imagen-candy{
-    background-image:linear-gradient(rgba(5,7,12,0.75), rgba( 5,7,12,0.75)), url('../assets/img/candy.jpg');
-    background-size: cover; /*cubre todo el espacio*/
-    background-position: center; 
-    background-repeat: no-repeat; /*para que no se repita la imagen cuando la imagen es muy chica*/
-    height: 92vh;
+.fondo-imagen-candy {
+    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url('../assets/img/candy.jpg');
+    background-size: cover; /* Cubre todo el área del contenedor */
+    background-position: center;
+    background-repeat: no-repeat; /* Evita que se repita */
+    min-height: 100vh; /* Asegura que cubra la altura completa de la ventana */
+    display: flex; /* Para alinear contenido */
+    align-items: center; /* Centra contenido verticalmente */
+    justify-content: center; /* Centra contenido horizontalmente */
+    padding: 20px; /* Opcional: Espaciado interno */
+}
+.card {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 0 15px rgba(255, 165, 0, 0.7); /* Brillo naranja */
+    transform: scale(1.05); /* Escalado suave */
 }
 @media screen and (max-width: 576px){
     .fondo-imagen{
